@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parc Papote</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      p {
+        text-align: justify;
+      }
+      .language-switcher {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+      }
+      .language-switcher button {
+        background: #ff6b6b;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 0.4rem 0.8rem;
+        margin-left: 0.5rem;
+        cursor: pointer;
+        font-weight: bold;
+        transition: transform 0.2s;
+      }
+      .language-switcher button:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="language-switcher">
+      <button id="switch-fr" aria-label="Switch to French">FR</button>
+      <button id="switch-en" aria-label="Switch to English">EN</button>
+    </div>
+
+    <!-- French version -->
+    <div class="lang-fr">
+      <h1 class="fade-in">🌳 Parc Papote</h1>
+      <img
+        src="https://source.unsplash.com/800x200/?park,montreal"
+        alt="Parc Jeanne-Mance"
+        class="header-image fade-in delay-1" />
+      <div class="location fade-in delay-2">
+        <h2>📍 Lieu</h2>
+        <p>
+          Rejoignez-nous chaque semaine au parc Jeanne-Mance, à Montréal. On se
+          rassemble au sud de la statue, sur la pelouse !
+        </p>
+      </div>
+      <div class="manifesto fade-in delay-3">
+        <h2>🗨️ Qu'est-ce que le Parc Papote ?</h2>
+        <p>
+          Parc Papote est un espace détendu et inclusif pour rencontrer du monde
+          et papoter. On sait qu’il n’est pas toujours facile de faire de
+          nouvelles rencontres — alors on simplifie : venez comme vous êtes,
+          prenez un autocollant pour indiquer vos intérêts, rejoignez un petit
+          groupe et discutez. Les groupes changent régulièrement pour découvrir
+          de nouvelles personnes à chaque fois. Pas de pression, pas de
+          brise-glace gênant — juste des gens sympas, de l’air frais et de
+          vraies conversations sous les arbres.
+        </p>
+      </div>
+      <div class="manifesto fade-in delay-4">
+        <h2>💡 Pourquoi un "Troisième Lieu" ?</h2>
+        <p>
+          Parc Papote s’inspire du concept de « troisième lieu » — une idée
+          utilisée en sociologie pour désigner les espaces qui ne sont ni la
+          maison (le premier lieu) ni le travail (le deuxième lieu).
+          Historiquement, les cafés, parcs, bibliothèques et centres
+          communautaires jouent ce rôle : offrir un cadre informel pour se
+          détendre, échanger et créer des liens sociaux. Aujourd’hui, ces
+          espaces disparaissent ou deviennent moins accessibles, ce qui accentue
+          l’isolement social. En se réunissant chaque semaine au parc
+          Jeanne-Mance, Parc Papote contribue à redonner vie à ce type d’endroit
+          : gratuit, ouvert, propice aux échanges d’idées et au renforcement du
+          lien social — sans adhésion, sans pression, juste de la conversation
+          en plein air.
+        </p>
+        <p class="small-text">
+          📚 Pour en savoir plus, lisez Ray Oldenburg (« The Great Good Place »)
+          ou Robert Putnam (« Bowling Alone »).
+        </p>
+      </div>
+      <button class="button fade-in delay-5">Venez Papoter Avec Nous !</button>
+      <footer>
+        &copy; 2025 Parc Papote · Votre rendez-vous pour papoter au parc.
+      </footer>
+    </div>
+
+    <!-- English version -->
+    <div class="lang-en" style="display: none">
+      <h1 class="fade-in">🌳 Parc Papote</h1>
+      <img
+        src="https://source.unsplash.com/800x200/?park,montreal"
+        alt="Jeanne-Mance Park"
+        class="header-image fade-in delay-1" />
+      <div class="location fade-in delay-2">
+        <h2>📍 Location</h2>
+        <p>
+          Meet us every week at Jeanne-Mance Park, Montreal. Look for the
+          colorful Papote sign near the central fountain — everyone’s welcome!
+        </p>
+      </div>
+      <div class="manifesto fade-in delay-3">
+        <h2>🗨️ What is Parc Papote?</h2>
+        <p>
+          Parc Papote is an easygoing, inclusive spot to meet people and have
+          real conversations outdoors. We know it can be hard to connect — so we
+          keep it simple: show up, get a sticker to share your interests, join a
+          small group, and chat. We shuffle groups regularly so you meet
+          different folks each time. There’s no pressure, no awkward icebreakers
+          — just friendly people, fresh air, and real talk under the trees.
+        </p>
+      </div>
+      <div class="manifesto fade-in delay-4">
+        <h2>💡 Why a Third Space?</h2>
+        <p>
+          Parc Papote is inspired by the idea of the "third space" — a concept
+          sociologists use to describe places that are neither home (the first
+          space) nor work (the second space). Historically, cafés, parks,
+          libraries, and community centers have played this role, giving people
+          informal settings to connect, relax, and build social ties. Today,
+          these spaces are disappearing or becoming harder to access, leading to
+          more social isolation. By meeting weekly in Jeanne-Mance Park, Parc
+          Papote helps revive this kind of space: free, open, and made for
+          exchanging ideas and growing community bonds — no memberships, no
+          pressure, just conversation in public.
+        </p>
+        <p class="small-text">
+          📚 If you’re curious, you can read more about third places in the
+          works of Ray Oldenburg (“The Great Good Place”) and Robert Putnam
+          (“Bowling Alone”).
+        </p>
+      </div>
+      <button class="button fade-in delay-5">Come Papote With Us!</button>
+      <footer>
+        &copy; 2025 Parc Papote · Your weekly excuse to chat in the park.
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("switch-fr").addEventListener("click", () => {
+        document.querySelector(".lang-fr").style.display = "block";
+        document.querySelector(".lang-en").style.display = "none";
+      });
+
+      document.getElementById("switch-en").addEventListener("click", () => {
+        document.querySelector(".lang-en").style.display = "block";
+        document.querySelector(".lang-fr").style.display = "none";
+      });
+    </script>
+  </body>
+</html>
